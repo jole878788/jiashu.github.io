@@ -1,136 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- 新增SEO优化 -->
-    <meta name="description" content="Jiashu Li - AI Researcher specializing in Autonomous Driving and Medical Imaging">
-    <meta name="keywords" content="AI Research, Autonomous Driving, LLM, Medical Image Denoising">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiashu Li - AI Researcher</title>
     <style>
-        :root {
-            --primary-color: #2c3e50;  /* 学术蓝主色调 */
-            --secondary-color: #3498db; /* 交互色 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
         }
-        
-        /* 新增导航栏 */
-        .navbar {
-            position: sticky;
-            top: 0;
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 1rem 0;
+        header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
         }
-        .nav-link {
-            margin: 0 1.5rem;
-            color: var(--primary-color);
-            border-bottom: 2px solid transparent;
-            transition: all 0.3s ease;
+        h1 { color: #2c3e50; }
+        h2 { color: #34495e; border-bottom: 2px solid #ecf0f1; }
+        .contact {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        .nav-link:hover { border-color: var(--secondary-color); }
-
-        /* 新增研究卡片布局 */
-        .research-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+        .section { margin-bottom: 30px; }
+        ul { padding-left: 20px; }
+        .badge {
+            background: #ecf0f1;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin: 3px;
+            display: inline-block;
         }
-        .research-card {
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: transform 0.3s ease;
-        }
-        .research-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        /* 新增学术时间线 */
-        .timeline {
-            position: relative;
-            padding-left: 3rem;
-            border-left: 2px solid var(--primary-color);
-        }
-        .timeline-item { margin-bottom: 2rem; }
-
-        /* 新增出版物样式 */
-        .publication {
-            background: #f9f9f9;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-left: 4px solid var(--secondary-color);
-        }
+        .project { margin-bottom: 25px; }
+        .date { float: right; color: #7f8c8d; }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div style="max-width: 1000px; margin: 0 auto;">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#research" class="nav-link">Research</a>
-            <a href="#publications" class="nav-link">Publications</a>
-            <a href="#teaching" class="nav-link">Teaching</a>
-        </div>
-    </nav>
-
-    <header id="home">
-        <!-- 新增研究领域标签 -->
-        <div style="margin: 1rem 0;">
-            <span class="badge">Autonomous Driving</span>
-            <span class="badge">Medical Imaging</span>
-            <span class="badge">Large Language Models</span>
-        </div>
-        <!-- 新增学术社交链接 -->
+    <header>
+        <h1>Jiashu Li</h1>
         <div class="contact">
-            <a href="https://scholar.google.com" target="_blank"><i class="fab fa-google-scholar"></i></a>
-            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <span>📍 Zhejiang, Wenzhou</span>
+            <span>📧 <a href="mailto:lijiash@kean.edu">lijiash@kean.edu</a></span>
+            <span>📱 +86 15372818852</span>
         </div>
     </header>
 
-    <!-- 新增研究亮点轮播 -->
     <section class="section">
-        <h2>🔭 Research Highlights</h2>
-        <div class="research-grid">
-            <div class="research-card">
-                <h3>BEV Perception in Adverse Weather</h3>
-                <p>Developed novel algorithms for all-weather autonomous driving perception systems</p>
-                <img src="bev-demo.gif" alt="BEV Demo" style="width:100%; border-radius:4px;">
-            </div>
-            <div class="research-card">
-                <h3>Medical Image Denoising</h3>
-                <p>Dual-domain GAN architecture achieves 98% noise reduction on LDCT scans</p>
-                <div class="image-comparison">
-                    <img src="before-denois.jpg" alt="Before Denoising">
-                    <img src="after-denois.jpg" alt="After Denoising">
-                </div>
-            </div>
+        <h2>🎓 Education</h2>
+        <div class="project">
+            <h3>Wenzhou-Kean University</h3>
+            <p><em>B.S in Mathematics and Applied Mathematics</em></p>
+            <ul>
+                <li>GPA: 3.91/4.0 | Top 1% Academic Standing</li>
+                <li>Relevant Courses: Applied Machine Learning, Statistical Data Mining, Big Data Computing</li>
+            </ul>
         </div>
     </section>
 
-    <!-- 新增学术时间线 -->
     <section class="section">
-        <h2>📅 Academic Timeline</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>2025 - Present</h3>
-                <p>Leading autonomous driving perception research at Tsinghua University</p>
-            </div>
-            <div class="timeline-item">
-                <h3>2024</h3>
-                <p>Published 2 first-author papers in top conferences (IROS, LICNN)</p>
-            </div>
+        <h2>💼 Experience</h2>
+        <div class="project">
+            <h3>Algorithm Researcher Intern @ Tsinghua University <span class="date">Sept 2023 - Present</span></h3>
+            <ul>
+                <li>Developed BEV-based perception algorithms for autonomous driving in adverse weather</li>
+                <li>Participated in NAVSIM v2 End-to-End Driving Challenge</li>
+                <li>Contributed to large-scale truck automatic parking system</li>
+            </ul>
         </div>
     </section>
 
-    <!-- 新增出版物区块 -->
-    <section id="publications" class="section">
-        <h2>📚 Publications</h2>
-        <div class="publication">
-            <h3>LLM-Enhanced Autonomous Driving Framework</h3>
-            <p><em>Jiashu Li, et al. IROS 2025 (Submitted)</em></p>
-            <a href="#" class="badge">PDF</a>
-            <a href="#" class="badge">Code</a>
-            <a href="#" class="badge">BibTeX</a>
+    <section class="section">
+        <h2>🔬 Research</h2>
+        <div class="project">
+            <h3>LLM+Autonomous Driving (First Author)</h3>
+            <ul>
+                <li>Integrated Deepseek models with GPT-Driver architecture</li>
+                <li>Achieved SOTA on nuScenes dataset</li>
+                <li>Submitted to IROS 2025</li>
+            </ul>
+        </div>
+        
+        <div class="project">
+            <h3>Medical Image Denoising (First Author)</h3>
+            <ul>
+                <li>Developed dual-domain GAN for LDCT denoising</li>
+                <li>Improved performance on Mayo-LDCT dataset</li>
+                <li>Submitted to LICNN 2025</li>
+            </ul>
         </div>
     </section>
+
+    <section class="section">
+        <h2>🛠️ Technologies</h2>
+        <div>
+            <span class="badge">C++</span>
+            <span class="badge">Python</span>
+            <span class="badge">PyTorch</span>
+            <span class="badge">TensorFlow</span>
+            <span class="badge">OpenCV</span>
+            <span class="badge">MMDetection</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Git</span>
+        </div>
+    </section>
+
+    <footer style="text-align: center; margin-top: 40px; color: #7f8c8d;">
+        <p>© 2024 Jiashu Li | Built with ♥ for AI Research</p>
+    </footer>
 </body>
 </html>
